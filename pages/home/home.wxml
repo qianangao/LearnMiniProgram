@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+<!--数据绑定 -->
+<view>Hello {{name}}</view>
+
+<!-- 列表显示 -->
+<view wx:for="{{students}}" >{{item.name}}:--{{item.age}}</view>
+
+<!-- 事件监听改变data -->
+<view>{{counter}}</view>
+<button size="mini" bindtap="handleIncrement">+</button>
+<button size="mini" bindtap="handleDecrement">-</button>

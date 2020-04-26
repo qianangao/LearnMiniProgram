@@ -1,0 +1,21 @@
+Page({
+  data:{
+    name:'world',
+    students:[
+      {id:'1',name:'apple',age:17},
+        {id:'2',name:'pea',age:12},
+        {id:'3',name:'banana',age:11}
+    ],
+    counter:0
+  },
+  handleIncrement(){
+    this.setData({
+      counter:this.data.counter+1
+    })    
+  },
+  handleDecrement(){
+    this.setData({
+      counter:this.data.counter-1
+    })
+  }
+})
